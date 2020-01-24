@@ -12,6 +12,12 @@ Goals are not only baseline howto, but also how to set them up for automated dep
 
 Right now, as this repository of knowledge takes its baby steps, it will largely be focused around automated collaborative hosting in AWS.  That is the cloud provider I've been using for my efforts.  As time and testing allows, I'll be expanding these principles to other cloud providers and their tools.
 
+## Assumptions
+
+There is one assumption in all of this.  That the hosting options (of various levels of ease and capability) as described in [Hugo Documentation: Hosting & Deployment](https://gohugo.io/hosting-and-deployment/) are not a path you choose to take.
+
+There are a number of ways to press an `Easy` button with Hugo publishing, to varying levels of ease, cost, and capability.  I personally chose to roll my own hosting, so I had complete control.  Additionally, were I to consider Hugo for enterprise-level usage, I'd likely be required to roll my own based on organizational or other constraints.
+
 ## Design Philosophy
 
 In general, I focus on a few core fundamentals:
