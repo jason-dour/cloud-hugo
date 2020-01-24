@@ -39,6 +39,6 @@ deployment:
         -   name: some-domain-web
             URL: s3://some-domain-web?region=us-east-2
             cloudFrontDistributionID: A1BCD123EFGH4
-        -   name: web-oddity-dev
+        -   name: some-domain-web-dev
             URL: s3://some-domain-web-dev?region=us-east-2
             cloudFrontDistributionID: A1BCD123EFGH4
