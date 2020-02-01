@@ -35,6 +35,19 @@ Hugo aligns well with Fundamental #1.  With minimal knowledge of website design,
 
 However, Hugo struggles a little when considering Fundamentals #2 through #4.  That's where cloud, source controls, and a bit of integration automation come into play.
 
+## Stretch Goals
+
+* Diagramming capability.
+  * Want to add easy to use Graphviz and/or Mermaid support.
+  * Current integrations are add-on pipeline scripting around Hugo.
+  * Or they are client-side processed Mermaid.
+  * Need to find way to let Hugo handle Mermaid and Graphviz a bit more "natively" than is presently possible.
+* Hugo fork?
+  * It may be necessary to maintain a fork of Hugo for some of my goals.
+  * Lack of an exec() handler, lack of integrated Graphviz/Mermaid support...these are hurdles that likely can be overcome with minimal code effort.
+  * Given the current state of conversation with Hugo developers, it is doubtful that a more generic exec framework is in the cards any time soon.
+  * Presently evaluating the likelihood I can code this.
+
 ## Examples
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
