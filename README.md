@@ -35,7 +35,7 @@ Hugo aligns well with Fundamental #1.  With minimal knowledge of website design,
 
 However, Hugo struggles a little when considering Fundamentals #2 through #4.  That's where cloud, source controls, and a bit of integration automation come into play.
 
-## Stretch Goals
+## Ideas & Goals
 
 * Diagramming capability.
   * Want to add easy to use Graphviz and/or Mermaid support.
