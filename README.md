@@ -42,6 +42,7 @@ However, Hugo struggles a little when considering Fundamentals #2 through #4.  T
   * Current integrations are add-on pipeline scripting around Hugo.
   * Or they are client-side processed Mermaid.
   * Need to find way to let Hugo handle Mermaid and Graphviz a bit more "natively" than is presently possible.
+  * Current Thinking - Use fenced code blocks, as VS Code editor will (with extensions) parse and display them which brings us closer to the published content in the preview window.  Then have as part of the info string for the fenced code block a variable that will control whether displayed as code or parsed by Graphviz/Mermaid CLI.  Looking at code now.
 * Hugo fork?
   * It may be necessary to maintain a fork of Hugo for some of my goals.
   * Lack of an exec() handler, lack of integrated Graphviz/Mermaid support...these are hurdles that likely can be overcome with minimal code effort.
