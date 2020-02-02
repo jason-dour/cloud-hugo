@@ -1,0 +1,5 @@
+{{- range $i := split .Inner "\n" -}}
+    {{- if ne (substr $i 0 3) "```" -}}
+    {{/* Insert Graphviz execution here. */}}
+    {{ end -}}
+{{- end -}}

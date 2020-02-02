@@ -1,4 +1,4 @@
-# example-hugo-site-repository
+# cloud-hugo/hugo/example-site-repository
 
 An example of how to setup a repo leveraging the `cloud-hugo` design.
 
