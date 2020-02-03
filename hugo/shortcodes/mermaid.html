@@ -1,5 +1,7 @@
-{{- range $i := split .Inner "\n" -}}
-    {{- if ne (substr $i 0 3) "```" -}}
-    {{/* Insert Mermaid execution here. */}}
-    {{ end -}}
+{{- $lines := "" -}}
+{{- range $line := split .Inner "\n" -}}
+    {{- if ne (substr $line 0 3) "```" -}}
+    {{- $lines = printf "%s\n%s" $lines $line -}}
+    {{- end -}}
 {{- end -}}
+{{/* Insert Mermaid execution here on $lines content. */}}
