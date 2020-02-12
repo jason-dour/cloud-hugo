@@ -51,6 +51,8 @@ However, Hugo struggles a little when considering Fundamentals #2 through #4.  T
   * Lack of an exec() handler, lack of integrated Graphviz/Mermaid support...these are hurdles that likely can be overcome with some coding effort.
   * Given the current state of conversation with Hugo developers, it is doubtful that a more generic exec framework is in the cards any time soon.
   * Presently evaluating the likelihood I can code this.
+* Three Words - IN - MEMORY - FILESYSTEM
+  * Could make Lambda processing instead of CodeBuild a very real possibility.
 
 ## Examples
 
