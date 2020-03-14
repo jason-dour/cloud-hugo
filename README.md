@@ -46,13 +46,13 @@ However, Hugo struggles a little when considering Fundamentals #2 through #4.  T
     * **Solution** - Fenced code blocks inside of Hugo shortcode block.
     * **PRO** - Uses CommonMark standard Markdown.  Anything CommonMark-compliant should be able to parse the source Markdown files. Also leverages Hugo's templating engine capabilities.  And VS Code can interpret the fenced code block and display the diagram inline.  May not work for all editors, but it is a simple standard that meets with the Fundamentals.
     * **CON** - It's a tad messy.  It requires `exec()` capability in Hugo.
-* Hugo fork?
-  * It may be necessary to maintain a fork of Hugo for some of my goals.
-  * Lack of an exec() handler, lack of integrated Graphviz/Mermaid support...these are hurdles that likely can be overcome with some coding effort.
+* Hugo Fork
+  * Fork exists.  See [jason-dour/hugo/tree/feature-exec](https://github.com/jason-dour/hugo/tree/feature-exec).
+    * Initial working release. Use the shortcodes from [hugo/shortcodes](https://github.com/jason-dour/cloud-hugo/tree/master/hugo/shortcodes).
   * Given the current state of conversation with Hugo developers, it is doubtful that a more generic exec framework is in the cards any time soon.
-  * Presently evaluating the likelihood I can code this.
 * Three Words - IN - MEMORY - FILESYSTEM
   * Could make Lambda processing instead of CodeBuild a very real possibility.
+  * Can possibly work if based in Python, but how can Hugo take advantage?
 
 ## Examples
 
