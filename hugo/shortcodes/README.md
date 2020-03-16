@@ -11,4 +11,4 @@ Hugo shortcodes that will assist with leveraging the `cloud-hugo` fundamentals.
 
 ## Caveat Emptor
 
-These shortcodes do not work at present.  Because they are all predicated on an `exec()` capability that does not yet exist in Hugo.  You can look at [my fork of Hugo](https://github.com/jason-dour/hugo) for this feature that is a work in progress.
+These shortcodes do not work with official Hugo releases at present.  Because they are all predicated on an `exec()` capability that does not yet exist in Hugo.  You can look at [my fork of Hugo](https://github.com/jason-dour/hugo) for this feature that is a work in progress.
