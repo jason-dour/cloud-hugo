@@ -33,26 +33,28 @@ These are the core elements of my approach in designing an environment that supp
 
 Hugo aligns well with Fundamental #1.  With minimal knowledge of website design, HTML, or other specialized knowledge, an author can create content without focusing on the design and delivery of that content.
 
-However, Hugo struggles a little when considering Fundamentals #2 through #4.  That's where cloud, source controls, and a bit of integration automation come into play.
+However, Hugo alone struggles a little when considering Fundamentals #2 through #4.  That's where cloud, source controls, and a bit of integration automation come into play.
 
 ## Ideas & Goals
 
-* Diagramming capability.
-  * Want to add easy to use Graphviz and/or Mermaid support.
+* **Diagramming capability.**
+  * Want to add easy to use `Graphviz`, `Mermaid`, and/or `Draw.io` support.
   * Current integrations are add-on pipeline scripting around Hugo.
-  * Or they are client-side processed Mermaid.
-  * Need to find way to let Hugo handle Mermaid and Graphviz a bit more "natively" than is presently possible.
-  * **Current Thinking**
-    * **Solution** - Fenced code blocks inside of Hugo shortcode block.
-    * **PRO** - Uses CommonMark standard Markdown.  Anything CommonMark-compliant should be able to parse the source Markdown files. Also leverages Hugo's templating engine capabilities.  And VS Code can interpret the fenced code block and display the diagram inline.  May not work for all editors, but it is a simple standard that meets with the Fundamentals.
-    * **CON** - It's a tad messy.  It requires `exec()` capability in Hugo.
-* Hugo Fork
-  * Fork exists.  See [jason-dour/hugo/tree/feature-exec](https://github.com/jason-dour/hugo/tree/feature-exec).
-    * Initial working release. Use the shortcodes from [hugo/shortcodes](https://github.com/jason-dour/cloud-hugo/tree/master/hugo/shortcodes).
-  * Given the current state of conversation with Hugo developers, it is doubtful that a more generic exec framework is in the cards any time soon.
-* Three Words - IN - MEMORY - FILESYSTEM
-  * Could make Lambda processing instead of CodeBuild a very real possibility.
+  * Or they are client-side processed `Mermaid`.
+  * Need to find way to let Hugo handle `Mermaid` and `Graphviz` a bit more "natively" than is presently possible.
+  * **Ideas**
+    * **Fenced code blocks inside of Hugo shortcode block.**
+      * **PRO** - Uses CommonMark standard Markdown.  Anything CommonMark-compliant should be able to parse the source Markdown files. Also leverages Hugo's templating engine capabilities.  And VS Code can interpret the fenced code block and display the diagram inline.  May not work for all editors, but it is a simple standard that meets with the Fundamentals.
+      * **CON** - It's a tad messy.  It requires `exec()` capability in Hugo.
+    * **Hugo Fork**
+      * Fork exists.  See [jason-dour/hugo/tree/feature-exec](https://github.com/jason-dour/hugo/tree/feature-exec).
+        * Initial working release. Use the shortcodes from [hugo/shortcodes](https://github.com/jason-dour/cloud-hugo/tree/master/hugo/shortcodes).
+      * Also implements GV->SVG processing
+      * Given the current state of conversation with Hugo developers, it is doubtful that a more generic exec framework is in the cards any time soon. I've attempted to [jumpstart the conversation](https://discourse.gohugo.io/t/the-long-overdue-need-for-converting-outputting-other-formats/27494/2).
+* **In-memory Filesystem**
+  * Could make Lambda processing instead of CodeBuild a very real possibility on larger sites.
   * Can possibly work if based in Python, but how can Hugo take advantage?
+    * Possible to implement with a Hugo "wrapper" that first uses `afero` to unzip/untar/prepare your repo contents before setting Hugo loose?
 
 ## Examples
 
