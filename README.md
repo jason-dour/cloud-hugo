@@ -51,6 +51,10 @@ However, Hugo alone struggles a little when considering Fundamentals #2 through 
         * Initial working release. Use the shortcodes from [hugo/shortcodes](https://github.com/jason-dour/cloud-hugo/tree/master/hugo/shortcodes).
       * Also implements GV->SVG processing
       * Given the current state of conversation with Hugo developers, it is doubtful that a more generic exec framework is in the cards any time soon. I've attempted to [jumpstart the conversation](https://discourse.gohugo.io/t/the-long-overdue-need-for-converting-outputting-other-formats/27494/2).
+    * **hugo-preproc**
+      * Rather than continuing with my idea of a fork of Hugo, I'm looking at writing a Hugo pre-processor.
+      * Simple flexible configuration for multiple pass pre-processing.
+      * See: [jason-dour/hugo-preproc](https://github.com/jason-dour/hugo-preproc)
 * **In-memory Filesystem**
   * Could make Lambda processing instead of CodeBuild a very real possibility on larger sites.
   * Can possibly work if based in Python, but how can Hugo take advantage?
